@@ -32,7 +32,7 @@ import groovy.transform.Field
 		0x80: 1     // Battery
 ]
 
-String appVersion()   { return "1.0.2" }
+String appVersion()   { return "1.0.3" }
 def setVersion(){
 	state.name = "New Graber Shade Driver"
 	state.version = "1.0.2"
@@ -44,10 +44,10 @@ def setVersion(){
 metadata {
 	definition (
 			name: "New Graber Shade Driver",
-			namespace: "tyuhl",
+			namespace: "tschwein",
 			description:"Driver for Graber Z-Wave Shades",
-			importUrl:"https://raw.githubusercontent.com/tyuhl/GraberShade/main/graber-shade-driver.groovy",
-			author: "Tim Yuhl") {
+			importUrl:"https://raw.githubusercontent.com/tschwein/Graber Driver/main/graber-shade-driver.groovy",
+			author: "Teri Schwein..  Original Tim Yuhl") {
 		capability "WindowShade"
 		capability "Switch"
 		capability "Battery"
